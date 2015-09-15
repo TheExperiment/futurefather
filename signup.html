@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Future Father</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Nick Jones / The Experiment">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=.5">
+    <!--Scripts-->
+    <script src="ui/assets/scripts/jquery-2.1.1.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="ui/assets/styles/css/main.css">
+    <!--Fonts-->
+    <script type="text/javascript" src="https://fast.fonts.net/jsapi/f28c71c8-6749-4860-ac60-3c10c18b60df.js"></script>
+
+    <script src="build/react.js"></script>
+</head>
+<body>
+  <div class="background"></div>
+    <div class="content">
+      <div class="logo"><img src="ui/assets/images/ffather.svg"></div>
+      <h1 class="title"></h1>
+      <p class="tagline">Your time together is brief.</p>
+      <p>He wasn’t breathing when I first saw him. His eyes were shut. His skin was blue. If Oliver hadn’t taken a breath that night, I wouldn’t be a father. If he hadn’t opened his eyes, we wouldn’t be making this app. But he did. <a href="https://medium.com/@narrowd/his-fathers-eyes-cf72d203b60b" target="_blank">The Whole Story.</a><br><br>Feels strange to ask for $100 this early. But if the platform is going to outlive us and not be VC funded, we have to find a group of dads who really want this to exist. Not just whoever signs up first.</p>
+      <div class="founding">
+        <div class="label" id="customButton">
+        	<div class="become">BECOME A FOUNDING FATHER</div>
+        	
+        	<div class="message">SOMETHING WENT WRONG. REFRESH.</div>
+        </div>
+        <div class="number">#{{ $founderUsersCount + 1 }} / 100</div>
+        <div class="icon"><img src="ui/assets/images/f.png"></div>
+      </div>
+      <br><p class="tagline beta">Just want us to invite you in when we are ready for beta?</p>
+      <div class="signup-holder">
+  	    <input id="signup-email" type="text" placeholder="Just Your Email"><div class="btn-interested">INTERESTED.</div>
+  	    <div class="message">SEE YOU IN THE FUTURE.</div>
+  	  </div>
+      <h3 class="q">?</h3>
+      <h2>Why are you making this?</h2>
+      <p>We spend a lot of hours away from our kids, staring at devices, building things that our friends and clients will think are cool. Future Father is our chance to make something meaningful. To focus what we are good at, creative uses of technology, on something we care deeply about. To give dads and dads-to-be a platform to capture the moments of good intentions and inspiration they have in the hours they aren’t with their kids. The window of time a dad and his son exist on Earth together is brief. We want to build something our kids might thank us for when they look back. They all have iPhones now and are more distracted by them than we are. They need a way to connect with their dad the way they connect with their friends. Through something more lasting than text or email.</p>
+      <br>
+	    <h3 class="q q2 qplus">+</h3>
+      <h2>Who is it for?</h2>
+      <p>Dads, soon-to-be dads and once they’re old enough, their sons. Mom apps will follow if this all works out.</p>
+      <br>   
+      <h3 class="q q2"><img src="ui/assets/images/f_dark.png"></h3>
+      <h2>What is it?</h2>
+      <p>We’re starting with an app to connect busy fathers and their distracted sons across time in meaningful ways. To be used when you are apart, in order to make the time you’re together more magical. Early version will be like a shared bucket list with the ability to send messages/prompts to your future son and your future self from today you. If you don’t make it to his 21st birthday, your messages will. We’ll ask you to try it this month or next. It’ll aim to reduce the number of weekends wasted, months that go by without meaningful memories made, and adventures trapped in an ever-drifting “Someday.” As it grows, the platform’s goal will always be to help dads and sons make the most of their short time together and to stay connected long after.</p>
+      <br>
+      <h3 class="q q2">!</h3>
+      <h2>What isn’t it?</h2>
+      <p>It’s not a way to connect, on devices, while you’re together.</p>
+      <br>
+      <h3 class="q q2"><img src="ui/assets/images/asterisk.png"></h3>
+      <h2>Why sons and not daughters?</h2>
+      <p>Daughters are next. We have five kids between the three of us and the oldest three are boys. So we are starting with them. Also, we are experienced fathers and sons but have never been daughters or moms. <span class="signup">Sign up</span> and we will keep you posted on the daddy/daughter and mother/son/daughter apps. We are developing them in parallel. Just not promoting them until we have made something useful.</p>
+      <br>
+      <h2 class="money"><a href="mailto:nickjones@theexperiment.io?subject=About that Future Father app you're making...&body=My name is..." target="_blank">Get in Touch.</a></h2>
+      <footer>
+      	A Product of<br>
+  	    <a href="http://theexperiment.io" target="_blank"><img class="e-logo" src="ui/assets/images/logo.svg"></a><a href="http://twitter.com/narrowd" target="_blank">
+  				<svg class="twitter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  					 width="30.278px" height="24.221px" viewBox="-2.64 -2.112 30.278 24.221" enable-background="new -2.64 -2.112 30.278 24.221"
+  					 xml:space="preserve">
+  				<path fill="#FEF5B9" d="M27.638,0.756c-1.113,0.487-2.312,0.813-3.566,0.963c1.282-0.757,2.269-1.955,2.729-3.383
+  					c-1.198,0.702-2.527,1.21-3.943,1.481c-1.133-1.188-2.747-1.93-4.532-1.93c-3.431,0-6.212,2.736-6.212,6.114
+  					c0,0.479,0.056,0.946,0.161,1.394C7.11,5.14,2.534,2.707-0.53-0.993C-1.066-0.09-1.372,0.961-1.372,2.082
+  					c0,2.122,1.098,3.992,2.766,5.09C0.373,7.14-0.585,6.865-1.421,6.407c-0.003,0.023-0.003,0.051-0.003,0.074
+  					c0,2.962,2.144,5.436,4.983,5.995c-0.521,0.142-1.069,0.216-1.638,0.216c-0.399,0-0.789-0.036-1.169-0.108
+  					c0.79,2.431,3.084,4.197,5.803,4.247c-2.125,1.641-4.805,2.614-7.715,2.614c-0.501,0-0.994-0.026-1.48-0.085
+  					c2.75,1.734,6.016,2.748,9.521,2.748c11.426,0,17.676-9.315,17.676-17.396c0-0.267-0.009-0.528-0.021-0.79
+  					C25.753,3.06,26.806,1.981,27.638,0.756z"/>
+  				</svg>
+
+  	    </a><a href="https://medium.com/@narrowd/his-fathers-eyes-cf72d203b60b" target="_blank">
+  	    	<svg class="medium" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  				 width="26.868px" height="18.025px" viewBox="-0.001 0 26.868 18.025" enable-background="new -0.001 0 26.868 18.025"
+  				 xml:space="preserve">
+  			<path fill="#FEF5B9" d="M26.865,18.018c-3.295,0-6.578,0-9.869,0c0-0.851,0-1.693,0-2.55c0.221,0,0.436,0.013,0.647-0.004
+  				c0.315-0.021,0.631-0.053,0.942-0.102c0.252-0.038,0.408-0.205,0.449-0.454c0.045-0.271,0.096-0.549,0.098-0.823
+  				c0.006-3.666,0.005-7.332,0.005-10.997c0-0.014-0.001-0.026-0.022-0.046c-0.052,0.164-0.105,0.328-0.156,0.492
+  				c-0.92,3.004-1.84,6.009-2.76,9.014c-0.547,1.788-1.097,3.576-1.642,5.365c-0.026,0.084-0.06,0.111-0.146,0.111
+  				c-1.334-0.003-2.668-0.003-4.002-0.001c-0.078,0-0.115-0.018-0.14-0.101c-0.677-2.337-1.357-4.673-2.038-7.008
+  				C7.688,9.048,7.143,7.18,6.598,5.312C6.392,4.604,6.187,3.897,5.98,3.19C5.969,3.153,5.957,3.115,5.933,3.038
+  				c-0.006,0.065-0.01,0.092-0.01,0.119c0,3.648-0.001,7.296,0.006,10.944c0,0.272,0.055,0.55,0.104,0.819
+  				c0.043,0.237,0.204,0.394,0.438,0.438c0.271,0.051,0.547,0.085,0.822,0.104c0.253,0.019,0.508,0.003,0.77,0.003
+  				c0,0.857,0,1.7,0,2.551c-2.689,0-5.372,0-8.064,0c0-0.847,0-1.688,0-2.548c0.253,0,0.503,0.009,0.751-0.003
+  				c0.285-0.013,0.574-0.021,0.854-0.07c0.427-0.076,0.569-0.235,0.635-0.664c0.032-0.211,0.057-0.429,0.057-0.642
+  				C2.3,10.697,2.301,7.304,2.295,3.912c-0.001-0.27-0.054-0.541-0.098-0.809C2.153,2.838,1.974,2.687,1.72,2.64
+  				C1.493,2.597,1.261,2.566,1.03,2.557C0.69,2.543,0.351,2.552,0.001,2.552c0-0.849,0-1.688,0-2.549c0.046,0,0.098,0,0.148,0
+  				c3.263,0,6.526,0.001,9.789-0.004c0.124,0,0.166,0.042,0.198,0.152c0.943,3.328,1.889,6.656,2.834,9.982
+  				c0.054,0.188,0.109,0.374,0.175,0.602c0.053-0.169,0.096-0.302,0.137-0.437c1.045-3.396,2.09-6.791,3.133-10.187
+  				c0.024-0.084,0.057-0.112,0.146-0.112c3.401,0.002,6.803,0.002,10.204,0.002c0.031,0,0.062,0,0.102,0c0,0.851,0,1.688,0,2.547
+  				c-0.049,0-0.097-0.001-0.144,0c-0.435,0.01-0.868,0.016-1.302,0.03c-0.119,0.004-0.238,0.032-0.355,0.062
+  				c-0.248,0.06-0.418,0.213-0.452,0.471c-0.046,0.344-0.096,0.692-0.097,1.039c-0.008,2.363-0.005,4.727-0.005,7.09
+  				c0,0.872-0.009,1.745,0.005,2.618c0.006,0.347,0.051,0.693,0.1,1.039c0.035,0.254,0.196,0.422,0.453,0.466
+  				c0.268,0.047,0.537,0.084,0.809,0.099c0.326,0.017,0.651,0.003,0.986,0.003C26.865,16.32,26.865,17.164,26.865,18.018z"/>
+  			</svg>
+
+  	    </a>
+  	    <div class="btn-signup-holder">
+  	    	<div class="btn-signup signup">SIGN UP</div>
+  	    	<div class="total">Total Fathers:<br><span class="count">{{ $totalUsersCount }}</span></div>
+  	    </div>
+  	  </footer>
+    </div>
+  
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-45973655-5', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+  <!--Application-->
+  
+  <script type="text/javascript">
+    var stripeKey = '{{ getenv ( "STRIPE_API_KEY_PUBLISH" ) }}';
+  </script>
+  <script type="text/javascript" src="ui/screens/Signup.js"></script>
+  <script type="text/jsx" src="ui/screens/Signup.jsx"></script>
+</body>
+
+</html>

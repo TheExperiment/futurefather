@@ -1,0 +1,1238 @@
+@charset "utf-8";
+.viewInTransition {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
+  transition-transition-timing-function: linear;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+.hideBackface {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.box-sizing {
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.centerY {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.centerX {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.centerXY {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.clearAnimation {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: none;
+  animation: none;
+}
+.clearAnimation {
+  -webkit-animation: none;
+  animation: none;
+}
+@-webkit-keyframes fade-in {
+  100% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  100% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  100% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    top: -20px;
+    opacity: 1;
+  }
+}
+/**********       EASING       **********/
+/* CSS Document */
+/**********       BASE        **********/
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #fef5b9;
+}
+html a {
+  color: #ff7347;
+  text-decoration: none;
+  font-size: 1em;
+}
+html a:visited {
+  color: #ff7347;
+}
+html a:hover {
+  color: #fef5b9;
+}
+html a:focus {
+  outline: thin dotted;
+}
+html a:hover,
+html a:active {
+  outline: 0;
+}
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: 'Clarendon W01 Light 692104';
+  letter-spacing: .01rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  background: #43191d;
+}
+.touch {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+/* ===== Primary Styles ========================================================
+   Author: Nick Jones / The Experiment
+   ========================================================================== */
+.border {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 4% 12%;
+  border: 0px solid #000;
+  -webkit-animation: border-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: border-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: border-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+  z-index: 2;
+  opacity: .6;
+}
+.border .corner {
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 2px;
+  background: #000;
+  position: fixed;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-animation: corner-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: corner-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: corner-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.border .corner:nth-of-type(2) {
+  right: 0;
+  left: auto;
+}
+.border .corner:nth-of-type(3) {
+  right: 0;
+  left: auto;
+  bottom: 0;
+  top: auto;
+}
+.border .corner:nth-of-type(4) {
+  bottom: 0;
+  top: auto;
+}
+.money {
+  width: 550px;
+}
+.background {
+  background: url('/ui/assets/images/olly.jpg') center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  -webkit-transform: perspective(1000px) scale(1);
+  -moz-transform: perspective(1000px) scale(1);
+  -ms-transform: perspective(1000px) scale(1);
+  -o-transform: perspective(1000px) scale(1);
+  transform: perspective(1000px) scale(1);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@media (max-width: 1000px) {
+  .background {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    -ms-transition-timing-function: ease-in;
+    transition-transition-timing-function: ease-in;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    transition-property: all;
+  }
+}
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 4% 10%;
+}
+@media (max-width: 1000px) {
+  .content {
+    padding: 7% 12%;
+  }
+}
+header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.tagline {
+  font-size: 2em;
+  font-family: 'Clarendon W01 Light 692104';
+  border-bottom: 4px #ff7347 solid;
+  line-height: 1em;
+  padding-bottom: 1em;
+}
+.tagline img {
+  position: relative;
+  top: -4px;
+  left: 10px;
+}
+.beta {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Clarendon W01 Bold 692098';
+  font-weight: 100;
+  line-height: .8em;
+}
+h1 {
+  font-size: 6em;
+  position: relative;
+  width: 50%;
+  margin-bottom: 77px;
+  top: 0;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fade-in 1s 0.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: fade-in 1s 0.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fade-in 1s 0.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 5em;
+  }
+  h1 .andson {
+    display: block;
+    float: left;
+  }
+}
+h2 {
+  font-size: 2.5em;
+  line-height: 1em;
+  top: 0;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fade-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: fade-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fade-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 3em;
+  }
+}
+h3 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+.q {
+  position: relative;
+  display: block;
+  padding: 13px 0 0 4px;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 40px;
+  margin-top: 90px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fef5b9;
+  color: #43191d;
+  border: 3px solid #fef5b9;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fade-in 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: fade-in 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fade-in 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 2em;
+}
+.q img {
+  margin-top: -5px;
+  margin-left: -2px;
+}
+.qplus {
+  padding-left: 0px;
+  padding-top: 10px;
+}
+.q2 {
+  margin-top: 40px;
+}
+.logo {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  opacity: 0;
+  top: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fade-in 1s 0.2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: fade-in 1s 0.2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fade-in 1s 0.2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.signup-holder {
+  position: relative;
+  height: 68px;
+  overflow: hidden;
+  width: 741px;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fade-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: fade-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fade-in 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.signup-holder.focus {
+  height: 80px;
+}
+@media (max-width: 1000px) {
+  .signup-holder.focus {
+    height: 157px;
+  }
+}
+.signup-holder.focus input {
+  padding: 18px 30px;
+  height: 77px;
+}
+.signup-holder.focus .btn-interested {
+  padding: 22px 30px 21px;
+}
+@media (max-width: 1000px) {
+  .signup-holder {
+    width: 100%;
+    height: 157px;
+  }
+}
+.signup-holder.in {
+  opacity: 1;
+}
+.signup-holder input {
+  display: block;
+  left: 0px;
+  width: 515px;
+  height: 67px;
+  background: none;
+  color: #fef5b9;
+  border: none;
+  outline: none;
+  border: 4px solid #ff7347;
+  font-size: 1.8rem;
+  font-family: 'Clarendon W01 Light 692104';
+  font-weight: 100;
+  padding: 13px 30px;
+  position: absolute;
+  margin: 0;
+  float: left;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  transition-transition-timing-function: ease-in-out;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+@media (max-width: 1000px) {
+  .signup-holder input {
+    width: 100%;
+  }
+}
+.signup-holder .btn-interested {
+  font-family: 'Futura W01 Bold';
+  font-size: 1.2em;
+  letter-spacing: .13em;
+  padding: 17px 30px 16px;
+  text-align: center;
+  background: #ff7347;
+  width: 231px;
+  margin-left: -5px;
+  color: #43191d;
+  position: absolute;
+  right: 0;
+  border: 4px solid #ff7347;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  transition-transition-timing-function: ease-in-out;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.signup-holder .btn-interested:hover {
+  background: #43191d;
+  color: #ff7347;
+}
+@media (max-width: 1000px) {
+  .signup-holder .btn-interested {
+    width: 100%;
+    left: 0;
+    top: 76px;
+    margin-left: 0;
+  }
+}
+.signup-holder .message {
+  font-family: 'Futura W01 Bold';
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: .13em;
+  padding: 18px 35px 22px 30px;
+  border: 4px solid #ff7347;
+  background: #43191d;
+  color: #ff7347;
+  margin: 6px 0;
+  position: absolute;
+  height: 68px;
+  left: 0;
+  top: 156px;
+  width: calc(14%);
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+@media (max-width: 1000px) {
+  .signup-holder .message {
+    width: 100%;
+  }
+}
+.signup-holder.done {
+  height: 80px;
+}
+.signup-holder.done input {
+  top: -120px;
+}
+.signup-holder.done .message {
+  padding-top: 25px;
+  height: 80px;
+  top: -46px;
+}
+.signup-holder.done .btn-interested {
+  width: 92px;
+  height: 80px;
+  padding-top: 25px;
+  padding-bottom: 18px;
+  background: #43191d;
+}
+@media (max-width: 1000px) {
+  .signup-holder.done {
+    height: 157px;
+  }
+  .signup-holder.done .message {
+    width: 100%;
+  }
+  .signup-holder.done .btn-interested {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 18px;
+    background: #43191d;
+  }
+}
+.signup {
+  color: #ff7347;
+  border-bottom: 2px solid #ff7347;
+  cursor: pointer;
+}
+.signup:hover {
+  border-bottom: none;
+}
+.founding {
+  position: relative;
+  top: 0;
+  border: 4px solid #ff7347;
+  line-height: 1em;
+  color: #ff7347;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 741px;
+  height: 84px;
+  display: inline-block;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fade-in 1s 0.8s forwards;
+  -moz-animation: fade-in 1s 0.8s forwards;
+  animation: fade-in 1s 0.8s forwards;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.founding.signup .label {
+  background: transparent;
+}
+.founding.signup .label .become {
+  top: -40px;
+}
+.founding.signup .label input {
+  top: -10px;
+}
+.founding.signup .label .message {
+  top: 100px;
+}
+.founding.signup:hover .label {
+  background: transparent;
+}
+.founding.signup .number {
+  font-family: 'Futura W01 Bold';
+  font-size: 1.2em;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  letter-spacing: .13em;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.founding.signup .number:hover {
+  background: #43191d;
+  color: #ff7347;
+}
+.founding.done .label {
+  width: 638px;
+  color: #ff7347;
+  pointer-events: none !important;
+  background: transparent;
+}
+@media (max-width: 1000px) {
+  .founding.done .label {
+    width: calc(89%);
+  }
+}
+.founding.done .label .become {
+  top: -120px;
+}
+.founding.done .label input {
+  top: -120px;
+}
+.founding.done .label .message {
+  top: 20px;
+  color: #ff7347;
+  background: transparent;
+  pointer-events: none;
+}
+.founding.done:hover .label {
+  background: transparent;
+}
+.founding.done:hover .label {
+  color: #ff7347;
+  background: transparent;
+}
+@media (max-width: 1000px) {
+  .founding.done .icon {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+  }
+  .founding.done .icon img {
+    right: auto;
+  }
+}
+.founding.done .number {
+  display: none;
+}
+.founding:hover {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.founding:hover .label {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  background: #43191d;
+  color: #ff7347;
+}
+.founding .label {
+  font-family: 'Futura W01 Bold';
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: .13em;
+  padding: 20px 35px 20px 30px;
+  border: 4px solid #ff7347;
+  background: #ff7347;
+  color: #43191d;
+  margin: 6px;
+  position: absolute;
+  width: 498px;
+  height: 64px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.founding .label .become {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 84px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  transition-transition-timing-function: ease-in-out;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.founding .label input {
+  display: block;
+  position: absolute;
+  top: 78px;
+  left: 0px;
+  width: 485px;
+  background: none;
+  color: #fef5b9;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-family: 'Clarendon W01 Light 692104';
+  font-weight: 100;
+  padding: 20px;
+  margin: 0 0 0 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.founding .label .message {
+  position: absolute;
+  left: 0;
+  top: 156px;
+  width: 100%;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.founding .number {
+  position: absolute;
+  top: 0;
+  left: 500px;
+  padding: 24px 30px 24px;
+  text-align: center;
+  background: #ff7347;
+  color: #43191d;
+  font-family: 'Clarendon W01 Bold 692098';
+  height: auto;
+  margin: 6px 6px 6px 10px;
+  width: 132px;
+}
+.founding .icon {
+  padding: 27px 24px 28px 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 4px solid #ff7347;
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  .founding {
+    width: 100%;
+    height: 153px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .founding:after {
+    display: none;
+  }
+  .founding .label {
+    width: calc(88%);
+    border-bottom: 4px solid #ff7347;
+  }
+  .founding .label:before {
+    position: absolute;
+    right: -8px;
+    top: -14px;
+    height: calc(100%);
+    content: "";
+    border: none;
+    width: 6px;
+  }
+  .founding .number {
+    font-size: 1.5em;
+    padding-top: 24px;
+    width: 50%;
+    left: 0;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 6px;
+    top: 76px;
+  }
+  .founding .icon {
+    text-align: right;
+    width: 45%;
+    height: 55px;
+    bottom: 0px;
+    top: auto;
+    border: none;
+  }
+  .founding .icon img {
+    position: absolute;
+    bottom: 27px;
+    right: 30px;
+  }
+}
+p {
+  position: relative;
+  top: 0;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fade-in 1s 0.6s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: fade-in 1s 0.6s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fade-in 1s 0.6s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 1.3em;
+  font-family: 'Clarendon W01 Light 692104';
+  width: 550px;
+  line-height: 1.5em;
+}
+@media (max-width: 1000px) {
+  p {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
+.founder-twitter path {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.founder-twitter:hover path {
+  fill: #ff7347;
+}
+.twitter,
+.medium {
+  position: fixed;
+  right: 6.5%;
+  bottom: 100px;
+}
+.twitter path,
+.medium path {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.twitter:hover path,
+.medium:hover path {
+  fill: #ff7347;
+}
+.twitter {
+  bottom: 180px;
+}
+.btn-signup-holder {
+  position: fixed;
+  right: 6%;
+  top: 6%;
+  margin-top: 50px;
+  z-index: 2000;
+}
+.total {
+  margin-top: 30px;
+  font-size: 2em;
+  font-family: 'Clarendon W01 Light 692104';
+  color: #ff7347;
+}
+.total .count {
+  font-size: 2em;
+}
+.btn-signup {
+  position: relative;
+  padding: 14px 20px;
+  background: #43191d;
+  font-family: 'Futura W01 Bold';
+  font-size: 1em;
+  color: #ff7347;
+  border: 4px solid #ff7347;
+  font-size: .8em;
+  letter-spacing: .2em;
+  line-height: .8em;
+  opacity: 0;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-animation: fade-in 1s 2s forwards ease-in-out;
+  -moz-animation: fade-in 1s 2s forwards ease-in-out;
+  animation: fade-in 1s 2s forwards ease-in-out;
+}
+.btn-signup:hover {
+  border: 4px solid #ff7347;
+  background: #ff7347;
+  color: #43191d;
+}
+footer {
+  padding: 50px 0 200px;
+  position: relative;
+  bottom: 0;
+}
+footer img {
+  display: block;
+  margin-top: 30px;
+}
+@media (max-width: 1000px) {
+  footer .e-logo {
+    width: 100%;
+    max-width: 400px;
+  }
+  footer .twitter,
+  footer .medium,
+  footer .btn-signup-holder {
+    margin-top: 60px;
+    position: relative;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    margin-right: 40px;
+  }
+  footer .twitter .btn-signup,
+  footer .medium .btn-signup,
+  footer .btn-signup-holder .btn-signup {
+    width: 127px;
+  }
+}
